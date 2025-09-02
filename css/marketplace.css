@@ -1,0 +1,180 @@
+.bg-steam, .bg-green-light {
+  background: #eaf7ed; /* Soft green */
+}
+.text-green { color: #28a745 !important; }
+.text-green-darker { color: #17692b !important; }
+
+.btn-success, .badge-green, .bg-green, .badge.bg-green {
+  background-color: #28a745 !important; /* Bootstrap's green */
+  color: #fff !important;
+}
+
+.genre-badge { font-size: 0.92em; }
+.platform-badge { font-size: 0.92em; }
+
+.badge-discount {
+  top: 10px;
+  left: 10px;
+  font-size: 0.94em;
+}
+
+.badge-platforms {
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
+}
+
+.card.steam-card, .game-list-row {
+  border-radius: 1.2rem;
+  background: #eaf7ed;
+}
+
+/* Mobile tweaks */
+.game-card-img {
+  height: 160px;
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.game-list-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.btn-circle {
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock-label {
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+/* Offcanvas Preview Style */
+.game-preview-canvas {
+  min-width: 260px;
+  max-width: 90vw;
+}
+
+.game-preview-img {
+  max-height: 160px;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .card.steam-card {
+    margin-bottom: 8px;
+  }
+  .game-list-row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding: 10px;
+    gap: 8px;
+  }
+  .game-list-img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 4px;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-5px); }
+  30% { transform: translateX(5px); }
+  45% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+.price-animated {
+  animation: shake 0.7s infinite alternate;
+  background: radial-gradient(circle at 70% 30%, #ffe066, #ffb300 80%);
+  border-radius: 1em;
+  padding: 0.17em 0.55em;
+  font-weight: bold;
+  font-size: 1.17em;
+  color: #22543d;
+  box-shadow: 0 2px 18px #ffecb366;
+}
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+	        animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1.0s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
